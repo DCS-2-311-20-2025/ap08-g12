@@ -112,7 +112,7 @@ export function render(scene, car) {
     course.getPointAt(time % 1, carPosition);
     car.position.copy(carPosition);
     course.getPointAt((time + 0.01) % 1, carTarget);
-    car.lookAt(carTarget);
+    car.lookAt(carTarget);h
     camera.lookAt(car.position.x, car.position.y, car.position.z);
     renderer.render(scene, camera);
 }
